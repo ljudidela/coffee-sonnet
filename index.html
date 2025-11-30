@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Coffee Shop ☕ Утренний кофе в космосе</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <canvas id="coffee-particles"></canvas>
+  
+  <header class="hero">
+    <div class="stars"></div>
+    <div class="container">
+      <h1 class="logo">☕ Cosmic Coffee</h1>
+      <p class="tagline">Где каждое утро начинается с космоса</p>
+      <div class="scroll-indicator">↓</div>
+    </div>
+  </header>
+
+  <section id="our-coffee" class="section">
+    <div class="container">
+      <h2 class="section-title">Наш кофе</h2>
+      <div class="coffee-showcase">
+        <div class="coffee-bean bean-1">☕</div>
+        <div class="coffee-bean bean-2">☕</div>
+        <div class="coffee-bean bean-3">☕</div>
+        <div class="coffee-bean bean-4">☕</div>
+        <div class="coffee-bean bean-5">☕</div>
+        <div class="coffee-cup">🌟</div>
+      </div>
+      <p class="section-description">
+        Зёрна собраны на высокогорных плантациях и обжарены под звёздным небом.
+        Каждая чашка — это путешествие сквозь галактики вкуса.
+      </p>
+    </div>
+  </section>
+
+  <section id="recipes" class="section">
+    <div class="container">
+      <h2 class="section-title">Космические рецепты</h2>
+      <div class="recipes-grid">
+        <div class="recipe-card">
+          <div class="recipe-icon">🌙</div>
+          <h3>Лунный латте</h3>
+          <p>Молоко, эспрессо, лунная пыль ванили</p>
+        </div>
+        <div class="recipe-card">
+          <div class="recipe-icon">⭐</div>
+          <h3>Звёздный капучино</h3>
+          <p>Двойной эспрессо, молочная пена, звёздная корица</p>
+        </div>
+        <div class="recipe-card">
+          <div class="recipe-icon">🌌</div>
+          <h3>Галактический мокко</h3>
+          <p>Шоколад, эспрессо, космическая карамель</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="section">
+    <div class="container">
+      <h2 class="section-title">Закажи свой космос</h2>
+      <form id="order-form" class="order-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <select id="coffee-type" required>
+            <option value="">Выберите напиток</option>
+            <option value="lunar">Лунный латте</option>
+            <option value="star">Звёздный капучино</option>
+            <option value="galaxy">Галактический мокко</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">
+          <span class="btn-text">Отправить в космос</span>
+          <span class="btn-particles"></span>
+        </button>
+      </form>
+      <div id="success-message" class="success-message hidden">
+        ✨ Ваш заказ улетел к звёздам! Скоро с вами свяжутся.
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Cosmic Coffee Shop. Все права защищены галактическим законом.</p>
+      <div class="social-links">
+        <a href="#">🌍</a>
+        <a href="#">🚀</a>
+        <a href="#">⭐</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
